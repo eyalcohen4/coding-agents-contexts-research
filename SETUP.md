@@ -21,12 +21,23 @@
 - `prompts.md` - Exact prompts to use
 - `README.md` - Logging instructions
 
+## Installation
+
+**Important:** Due to a known issue with `rollup`'s optional postinstall script, install dependencies with the `--ignore-scripts` flag:
+
+```bash
+cd repo-a  # or repo-b
+pnpm install --ignore-scripts
+```
+
+This is safe - the failing script is optional and doesn't affect functionality. All packages will work correctly.
+
 ## Next Steps
 
 1. **Install dependencies** in both repos:
    ```bash
-   cd repo-a && pnpm install
-   cd ../repo-b && pnpm install
+   cd repo-a && pnpm install --ignore-scripts
+   cd ../repo-b && pnpm install --ignore-scripts
    ```
 
 2. **Verify setup**:

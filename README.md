@@ -7,10 +7,10 @@ This repository contains two identical React apps (Repo A and Repo B) used to te
 ## Quick Start
 
 1. Choose a repo (A or B)
-2. Install dependencies:
+2. Install dependencies (use `--ignore-scripts` to avoid rollup postinstall issue):
    ```bash
    cd repo-a  # or repo-b
-   pnpm install
+   pnpm install --ignore-scripts
    ```
 
 3. Run tests:
